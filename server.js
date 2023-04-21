@@ -29,7 +29,12 @@ app.use(cookieParser())
 
 // Routes
 app.use('/',require("./routes/root"))
+app.use('/auth', require('./routes/authRoutes'))
 app.use('/users',require("./routes/usersRouter"))
+app.use('/notes', require('./routes/noteRoutes'))
+
+
+
 
 
 app.all('*',(req, res) => {

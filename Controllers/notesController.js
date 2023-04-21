@@ -1,5 +1,5 @@
-const Note = require('../models/Note')
-const User = require('../models/User')
+const Note = require('./../model/Note')
+const User = require('./../model/User')
 const asyncHandler = require('express-async-handler')
 
 // @desc Get all notes 
