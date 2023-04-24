@@ -12,7 +12,7 @@ const corsOption = require("./config/corsOption");
 const cookieParser=require("cookie-parser")
 const mongoose=require("mongoose")
 const connectDB=require("./config/dbConn")
-
+const Note=require("./model/Note")
 
 connectDB()
 
@@ -32,7 +32,6 @@ app.use('/',require("./routes/root"))
 app.use('/auth', require('./routes/authRoutes'))
 app.use('/users',require("./routes/usersRouter"))
 app.use('/notes', require('./routes/noteRoutes'))
-
 
 
 
